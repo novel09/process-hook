@@ -38,7 +38,17 @@ public class processHook implements IXposedHookLoadPackage {
             spoofDeviceProperties(properties);
             spoofRefreshRate(properties);
             XposedBridge.log("Spoofed " + packageName + " as " + properties.device);
+    
+        // Extra CPU spoof for Snapdragon 8 Gen 3
+        try {
+            System.setProperty("ro.soc.manufacturer", "Qualcomm");
+            System.setProperty("ro.soc.model", "SM8650");
+            System.setProperty("ro.board.platform", "kalama");
+        } catch (Exception e) {
+            XposedBridge.log("Failed to spoof extra CPU props: " + e.getMessage());
         }
+
+    }
     }
 
     /**
