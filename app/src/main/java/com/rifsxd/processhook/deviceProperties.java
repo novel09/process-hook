@@ -171,6 +171,11 @@ public final class deviceProperties {
 
         // Populate device map for ROG Phone 8 apps
         String[] rogPhoneApps = {
+"com.garena.game.df", 
+
+"com.cpuid.cpu_z",
+
+"com.mobile.legends", 
             "com.gameloft.android.ANMP.GloftA9HM",
             "com.activision.callofduty.shooter",
             "com.activision.callofudty.warzone",
