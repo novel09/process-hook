@@ -43,7 +43,7 @@ public final class deviceProperties {
         "qcom",             // Hardware
         null,               // Board (optional, null if not available)
         null,               // Bootloader (optional)
-        "165",              // Refresh rate (Hz)
+        "120",              // Refresh rate (Hz)
         null,               // Username (optional)
         null,               // Hostname (optional)
         null                // Fingerprint (optional)
@@ -171,11 +171,9 @@ public final class deviceProperties {
 
         // Populate device map for ROG Phone 8 apps
         String[] rogPhoneApps = {
-"com.garena.game.df", 
-
-"com.cpuid.cpu_z",
-
-"com.mobile.legends", 
+            "com.garena.game.df", 
+            "com.cpuid.cpu_z",
+            "com.mobile.legends", 
             "com.gameloft.android.ANMP.GloftA9HM",
             "com.activision.callofduty.shooter",
             "com.activision.callofudty.warzone",
